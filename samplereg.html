@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reg.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">  <img src="1.png" height="60px" width="60px"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sample.html">Sign In</a></li>
+                <li><a href="samplereg.html">Sign Up</a></li>                    
+               <li><a href="about.html">About Us</a></li>
+                <li><a href="samplecont.html">Contact Us</a></li>
+               
+            </ul>
+       
+     
+
+        </div> 
+    
+        <div class="wrapper">
+            <div class="title"><span>REGISTRATION FORM</span></div>
+            <form action="#">
+        <div class="row">
+            
+            <input class="first" type="text" name="first_name"  placeholder="First Name" required
+            minlength="3" maxlength="10" id="first_name" autocomplete="off" onfocusout="firstname_check(this)" >
+           
+        
+        
+            <input class="second" type="text" name="lname" placeholder="Last Name" required
+            minlength="3" maxlength="10" id="last_name" autocomplete="off" onfocusout="lastname_check(this)" ><br>
+            <span id="fname"></span>
+            <span id="lname"></span> 
+        
+        </div><br><br>
+        <div class="row">
+           
+            <input class="first" type="date" name="dbirth" id="date" placeholder="Date of birth" required max="" autocomplete="off"
+            onfocusout="calculate_age(this)">
+            
+            
+            <input class="second" type="text" name="age" id="age"  placeholder="age" readonly>
+        
+            
+        </div><br><br>
+        <div class="row">
+            
+            <select class="first" required>
+            <option value="" disabled selected>--Select Gender--</option>
+                <option value="f1">Female</option>
+                <option value="f2">Male</option>
+                <option value="f3">Others</option>
+            </select>
+            
+            
+           
+            <input class="second" type="text" name="phone" minlength="10" maxlength="10" placeholder="Phone Number" required
+            id="phone_number" autocomplete="off" onfocusout="phone_check(this)" ><br>
+            <span id="phone"></span>
+
+           
+        </div><br><br>
+        <div class="row">
+            
+            <input  class="first" type="text" name="email" placeholder="Email Address" required
+            id="email_id" autocomplete="off" onfocusout="email_check(this)" >
+           
+        
+            <input class="second" type="text" name="address" placeholder="Address" required><br>
+            <span id="email"></span>
+        </div><br><br>
+        <div class="row">
+           
+            <select class="first" id="select-state" onfocusout="ChangeCityList()">
+                <option value="">-- state --</option>
+                <option value="ker">Kerala</option>
+                <option value="goa">Goa</option>
+                <option value="kar">Karnataka</option>
+                <option value="tam">Tamilnadu</option>
+              </select>
+           
+            <select class="second" id="select-city" onfocusout=""></select>
+              
+               
+            </select>
+            
+        </div><br><br>
+        <div class="row">
+            
+            <input  class="first" type="text" name="p1" placeholder="User name" required
+            id="user_name" autocomplete="off" onfocusout="username_check(this)" >
+            
+           
+        
+            
+            <input  class="second" type="password" name="password" placeholder="Password" required
+            onfocusout="password_check(this)" id="password" ><br>
+            <span id="username"></span>
+            <span id="pass"></span>
+        </div><br><br>
+            <div class="row ">
+        
+            
+            <input class="first"  type="password" name="cpassword" placeholder=" confirm Password" required
+            onfocusout="cpassword_check(this)" id="cpassword" >
+            <span id="cpass"></span>
+           
+        </div><br><br>
+       
+        <div class="row"> 
+        <input class="first  button" type="button" name="button" value="Register"><br><br>
+        </div>
+    </div>
+    <script src="register.js"  ></script>
+</body>
+    
+    <footer>
+    
+        <div class="footer-content">
+          <div class="footer-logo">
+            <!-- <img src="preview1.jpg" alt="Company Logo"> -->
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="about.html">Services</a></li>
+              <li><a href="samplecont.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <a href="#"><img src="facebook-icon.png" height="40px" width="40px" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png"  height="40px" width="40px" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png"  height="40px" width="40px" alt="Instagram"></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Your Company. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+        
+        </div>
+      </footer>
+      

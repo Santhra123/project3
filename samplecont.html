@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="cont.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">  <img src="1.png" height="60px" width="60px"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sample.html">Sign In</a></li>
+                <li><a href="samplereg.html">Sign Up</a></li>                    
+               <li><a href="about.html">About Us</a></li>
+                <li><a href="samplecont.html">Contact Us</a></li>
+               
+            </ul>
+        </div>
+       
+<div class="wrapper">
+    <div class="title"><span>CONTACT US</span></div>
+    <form action="#">
+        <div class="row">
+            <input type="text" name="name" minlength="6" maxlength="10" placeholder="Enter User  Name"
+             required id="user_name" autocomplete="off" onfocusout="username_check(this)" >
+             <span id="username"></span>
+         
+        </div><br>
+        <div class="row">
+            <input type="email" name="pass" placeholder="Enter Email" required
+             id="email_id" autocomplete="off" onfocusout="email_check(this)" >
+            <span id="email"></span>
+        
+        </div><br>
+        <div class="row">
+            <textarea name="pass" placeholder="Type Something" required
+             id="message" autocomplete="off" onfocusout="message_check(this)">
+            
+        </textarea><span id="mess"></span>
+        </div>
+        <div class="row button">
+            
+            <input type="submit" name="submit" value="submit"><br>
+           
+        </div>
+    </form>
+    <script src="contactus.js"  ></script>
+</div>
+<footer>
+</body>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <!-- <img src="preview1.jpg" alt="Company Logo"> -->
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">Services</a></li>
+          <li><a href="samplecont.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="facebook-icon.png" height="40px" width="40px" alt="Facebook"></a>
+        <a href="#"><img src="twitter-icon.png"  height="40px" width="40px" alt="Twitter"></a>
+        <a href="#"><img src="instagram-icon.png"  height="40px" width="40px" alt="Instagram"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Your Company. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+    </div>
+  </footer>
+</html>
